@@ -8,7 +8,7 @@ faqBoxes.forEach((box) => {
       box.classList.remove("active");
       const answer = box.querySelector(".answer");
       if (answer) answer.remove();
-      box.querySelector("img").src = "plus.png";
+     
     } else {
       
 
@@ -17,7 +17,7 @@ faqBoxes.forEach((box) => {
         b.classList.remove("active");
         const ans = b.querySelector(".answer");
         if (ans) ans.remove();
-        b.querySelector("img").src = "plus.png";
+       
       });
 
   
@@ -31,12 +31,12 @@ faqBoxes.forEach((box) => {
         box.querySelector(".in-ques").textContent.trim()
       );
       box.appendChild(answer);
-      box.querySelector("img").src = "close.png"; 
+     
     }
   });
 });
 
-// helper: FAQ answers
+
 function getAnswerText(question) {
   switch (question) {
     case "What is NetFlix":
